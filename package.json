@@ -1,0 +1,91 @@
+{
+  "name": "redraw-drawio",
+  "version": "0.0.1",
+  "description": "react component for drawio",
+  "type": "module",
+  "scripts": {
+    "prepublishOnly": "npm run build && clean-publish",
+    "emit-declarations": "tsc --emitDeclarationOnly",
+    "build": "rollup -c && npm run emit-declarations",
+    "build:tsup": "tsup src/index.ts",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write .",
+    "start:storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build"
+  },
+  "keywords": [
+    "react",
+    "drawio",
+    "draw.io",
+    "diagram",
+    "diagrams",
+    "flowchart",
+    "flowcharts"
+  ],
+  "author": "Bradley Dirheimer",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.22.15",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@storybook/addon-essentials": "^7.5.2",
+    "@storybook/addon-interactions": "^7.5.2",
+    "@storybook/addon-links": "^7.5.2",
+    "@storybook/blocks": "^7.5.2",
+    "@storybook/builder-vite": "^7.5.2",
+    "@storybook/react": "^7.5.2",
+    "@storybook/react-vite": "^7.5.2",
+    "@storybook/testing-library": "^0.2.2",
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.34",
+    "@types/react-dom": "^18.2.14",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "@vitejs/plugin-react": "^4.1.1",
+    "acorn": "^8.11.2",
+    "clean-publish": "^4.2.0",
+    "css-loader": "^6.8.1",
+    "enzyme": "^3.11.0",
+    "eslint": "^8.53.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "eslint-plugin-storybook": "^0.6.15",
+    "gh-pages": "^6.0.0",
+    "prettier": "^3.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^4.3.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-import-css": "^3.3.5",
+    "rollup-plugin-swc3": "^0.10.3",
+    "storybook": "^7.5.2",
+    "ts-node": "^10.9.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  },
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
+  "exports": "./src/index.ts",
+  "publishConfig": {
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "exports": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "directory": "package"
+  },
+  "files": [
+    "dist"
+  ],
+  "prettier": {
+    "printWidth": 80,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always",
+    "endOfLine": "lf"
+  }
+}
