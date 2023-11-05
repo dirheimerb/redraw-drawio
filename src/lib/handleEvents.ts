@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { EmbedEvents, EventHandlerMap } from './types';
+import { EmbedEvents, EventHandlerMap } from '../types';
 
 /**
  * Type alias for a map of event handlers.

@@ -35,7 +35,7 @@
     "moduleResolution": "node" /* Specify how TypeScript looks up a file from a given module specifier. */,
     "baseUrl": "." /* Specify the base directory to resolve non-relative module names. */,
     "paths": {
-      "@/*": [
+      "redraw-drawio/*": [
         "src/*"
       ] /* Specify a set of entries that re-map imports to additional lookup locations. */
     } /* Specify a set of entries that re-map imports to additional lookup locations. */,
@@ -120,9 +120,10 @@
     "src/lib/getEmbedUrl.ts",
     "src/lib/handleEvents.ts",
     "src/lib/index.ts",
-    "src/lib/types.ts",
-    "src/lib/use-actions.ts",
-    "src/index.ts"
+    "src/types",
+    "src/hooks/use-actions.ts",
+    "src/index.ts",
+    "src/index.d.ts"
   ],
   "exclude": ["node_modules", "dist"]
 }

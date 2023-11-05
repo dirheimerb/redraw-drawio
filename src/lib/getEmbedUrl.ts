@@ -1,4 +1,4 @@
-import { UrlParameters } from './types';
+import { UrlParameters } from '../types';
 
 export const getEmbedUrl = (
   urlParameters?: UrlParameters,
