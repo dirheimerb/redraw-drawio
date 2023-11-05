@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { DrawIOEmbed } from '../src/lib/drawio-embed';
 import { useEffect, useRef, useState } from 'react';
-import { DrawIoEmbedRef } from '../src/lib/types';
+import { DrawIoEmbedRef } from '../src/types';
 import React from 'react';
 
 const meta: Meta<typeof DrawIOEmbed> = {
@@ -9,6 +9,7 @@ const meta: Meta<typeof DrawIOEmbed> = {
   component: DrawIOEmbed,
   parameters: {
     layout: 'centered',
+    controls: { expanded: true }
   },
   args: {
     urlParameters: {
@@ -29,6 +30,7 @@ const meta: Meta<typeof DrawIOEmbed> = {
     onPrompt: { action: 'onPrompt' },
     onTemplate: { action: 'onTemplate' },
   },
+  tags: [ 'drawio', 'components', 'autodocs' ],
   decorators: [
     (Story) => (
       <div className="box" style={{ width: '800px', height: '500px' }}>
