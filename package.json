@@ -1,6 +1,6 @@
 {
   "name": "redraw-drawio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "react component for drawio",
   "type": "module",
   "scripts": {
@@ -16,7 +16,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:ci": "jest --ci --coverage"
+    "test:ci": "jest --ci --coverage",
+    "doc:markdown": "typedoc --plugin typedoc-plugin-markdown --out docs/md src/index.ts"
   },
   "keywords": [
     "react",
@@ -29,6 +30,10 @@
   ],
   "author": "Bradley Dirheimer",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dirheimerb/redraw-drawio.git"
+  },
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.15",
     "@rollup/plugin-node-resolve": "^15.2.3",
@@ -60,6 +65,7 @@
     "eslint-plugin-react-refresh": "^0.4.4",
     "eslint-plugin-storybook": "^0.6.15",
     "gh-pages": "^6.0.0",
+    "jest": "^29.7.0",
     "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -68,9 +74,11 @@
     "rollup-plugin-import-css": "^3.3.5",
     "rollup-plugin-swc3": "^0.10.3",
     "storybook": "^7.5.2",
+    "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
     "tsup": "^7.2.0",
     "typedoc": "^0.25.3",
+    "typedoc-plugin-markdown": "^3.17.0",
     "typescript": "^5.2.2",
     "vite": "^4.5.0"
   },
@@ -96,5 +104,11 @@
     "trailingComma": "all",
     "arrowParens": "always",
     "endOfLine": "lf"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ]
 }
