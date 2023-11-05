@@ -1,0 +1,1 @@
+{"version":3,"file":"preview-b25bb000.js","sources":["../../.storybook/preview.ts"],"sourcesContent":["import type { Preview } from '@storybook/react';\n\nconst preview: Preview = {};\n\nexport default preview;\n"],"names":["preview"],"mappings":"AAEA,MAAMA,EAAmB,CAAA"}
